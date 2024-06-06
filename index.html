@@ -18,8 +18,8 @@
          <label for="man">남</label><br>
          <input type="radio" id="woman" name="gender" value="woman" onclick="fnCheckGender(2)">
          <label for="woman">여</label><br>
-         <a href="#" id="start_btn1" class="btn" onclick="fnMovePage('#gender_container', '#difficult_container')">Next</a>
       </form>
+      <a href="#" id="start_btn1" class="btn" onclick="fnMovePage('#gender_container', '#difficult_container'); fnName()">Next</a>
    </div>
 
    <div id="difficult_container" class="panels none">
@@ -30,45 +30,40 @@
          <label for="manager">윗사명자와의 소통</label><br>
          <input type="radio" id="family" name="difficult_thing" value="family" onclick="fnCheckSelect(3)">
          <label for="family">가족 소통</label><br>
-         <a href="#" id="start_btn2" class="btn" onclick="fnMovePage('#difficult_container', 'start')">Next</a>
       </form>
+      <a href="#" id="start_btn2" class="btn" onclick="fnMovePage('#difficult_container', 'start')">Next</a>
    </div>
 
    <!--열매 질문 시작-->
    <div id="fruit_num1" class="panels none">
       <form method="get" id="fruit_question1">
-         <h2>가장 기억에 남는 열매는 누구야?</h2><br>
          <input type="text" value="" id="fruit_memorable">
-         <a href="#" id="btn1" class="btn" onclick="fnMovePage('#fruit_num1', '#fruit_num2')">Next</a>
       </form>
+      <a href="#" id="fruit_btn1" class="btn" onclick="fnMovePage('#fruit_num1', '#fruit_num2')">Next</a>
     </div>
     <div id="fruit_num2" class="panels none">
        <form method="get" id="fruit_question2">
-          <h2>왜 그 열매가 기억에 남아?</h2><br>
           <input type="text" value="" id="fruit_reason">
-          <a href="#" id="btn2" class="btn" onclick="fnMovePage('#fruit_num2', '#fruit_num3')">Next</a>
        </form>
+       <a href="#" id="fruit_btn2" class="btn" onclick="fnMovePage('#fruit_num2', '#fruit_num3')">Next</a>
      </div>
      <div id="fruit_num3" class="panels none">
         <form method="get" id="fruit_question3">
-           <h2>그 일이 있었을 때 너의 마음은 어땠어?</h2><br>
            <input type="text" value="" id="fruit_mind">
-           <a href="#" id="btn3" class="btn" onclick="fnMovePage('#fruit_num3', '#fruit_num4')">Next</a>
         </form>
+        <a href="#" id="fruit_btn3" class="btn" onclick="fnMovePage('#fruit_num3', '#fruit_num4')">Next</a>
       </div>
       <div id="fruit_num4" class="panels none">
          <form method="get" id="fruit_question4">
-            <h2>그랬구나 속상했겠다ㅠㅠ 그때 너가 원했던 건 뭐야?</h2><br>
              <input type="text" value="" id="fruit_want">
-            <a href="#" id="btn4" class="btn" onclick="fnMovePage('#fruit_num4', '#fruit_num5')">Next</a>
          </form>
+         <a href="#" id="fruit_btn4" class="btn" onclick="fnMovePage('#fruit_num4', '#fruit_num5')">Next</a>
        </div>
        <div id="fruit_num5" class="panels none">
           <form method="get" id="fruit_question5">
-              <h2>듣고 싶은 말이 있어?</h2><br>
               <input type="text" value="" id="fruit_hear">
-              <a href="#" id="btn_last" class="btn" onclick="fnMovePage('#fruit_num5', '#letter')">Next</a>
            </form>
+           <a href="#" id="fruit_btn5" class="btn" onclick="fnMovePage('#fruit_num5', '#letter')">Next</a>
          </div>
 
          <!--열매 질문 끝-->
@@ -77,31 +72,27 @@
    <!--윗사명자 질문 시작-->
    <div id="manager_num1" class="panels none">
       <form method="get" id="manager_question1">
-         <h2>소통이 필요한 부분은 어떤 거야?</h2><br>
           <input type="text" value="" id="manager_need">
-         <a href="#" id="btn1" class="btn" onclick="fnMovePage('#manager_num1', '#manager_num2')">Next</a>
       </form>
+      <a href="#" id="manager_btn1" class="btn" onclick="fnMovePage('#manager_num1', '#manager_num2')">Next</a>
     </div>
     <div id="manager_num2" class="panels none">
        <form method="get" id="manager_question2">
-          <h2>어떤 이유에서 소통이 잘 안된다고 느꼈어?</h2><br>
           <input type="text" value="" id="manager_reason">
-          <a href="#" id="btn2" class="btn" onclick="fnMovePage('#manager_num2', '#manager_num3')">Next</a>
        </form>
+       <a href="#" id="manager_btn2" class="btn" onclick="fnMovePage('#manager_num2', '#manager_num3')">Next</a>
      </div>
      <div id="manager_num3" class="panels none">
         <form method="get" id="manager_question3">
-           <h2>윗사명자에게 듣고 싶었던 말을 뭐였어?</h2><br>
            <input type="text" value="" id="manager_want">
-           <a href="#" id="btn3" class="btn" onclick="fnMovePage('#manager_num3', '#manager_num4')">Next</a>
         </form>
+        <a href="#" id="manager_btn3" class="btn" onclick="fnMovePage('#manager_num3', '#manager_num4')">Next</a>
       </div>
       <div id="manager_num4" class="panels none">
          <form method="get" id="manager_question4">
-            <h2>정말 그랬겠다... 혹시 윗사명자에게 하고 싶은 말이 있어?</h2><br>
             <input type="text" value="" id="manager_message">
-            <a href="#" id="btn_last" class="btn" onclick="fnMovePage('#manager_num4', '#letter')">Next</a>
          </form>
+         <a href="#" id="manager_btn4" class="btn" onclick="fnMovePage('#manager_num4', '#letter')">Next</a>
          </div>
    <!--윗사명자 질문 끝-->
 
@@ -110,58 +101,46 @@
    <!--가족 질문 시작-->
    <div id="family_num1" class="panels none">
       <form method="get" id="family_question1">
-         <h2>최근에 소통이 잘 안된다고 느낀 사람은 누구야?</h2>
-         <input type="radio" id="mother" name="parents" value="mother">
-         <label for="mother">어머니</label><br>
-         <input type="radio" id="father" name="parents" value="fother">
-         <label for="fother">아버지</label><br>
-         <input type="radio" id="both" name="parents" value="both">
-         <label for="both">두분 다</label><br>
-         <a href="#" id="btn1" class="btn" onclick="fnMovePage('#family_num1', '#family_num2')">Next</a>
+         <label><input type="radio" id="mother" name="parents" value="mother">&nbsp;&nbsp;어머니&nbsp;&nbsp;&nbsp;&nbsp;</label>
+         <label><input type="radio" id="father" name="parents" value="fother">&nbsp;&nbsp;아버지&nbsp;&nbsp;&nbsp;&nbsp;</label>
+         <label><input type="radio" id="both" name="parents" value="both">&nbsp;&nbsp;두분 다</label><br>
       </form>
+      <a href="#" id="family_btn1" class="btn" onclick="fnMovePage('#family_num1', '#family_num2')">Next</a>
     </div>
    <div id="family_num2" class="panels none">
       <form method="get" id="family_question2">
-         <h2>최근에 가장 소통이 안되었던 부분은 무엇이었어?</h2>
-         <input type="radio" id="study" name="need_thing" value="study">
-         <label for="study">학업</label><br>
-         <input type="radio" id="money" name="need_thing" value="money">
-         <label for="money">금전</label><br>
-         <input type="radio" id="comunication" name="need_thing" value="communication">
-         <label for="communication">소통</label><br>
-         <input type="radio" id="hate" name="need_thing" value="hate">
-         <label for="hate">핍박</label><br>
-         <a href="#" id="btn2" class="btn" onclick="fnMovePage('#family_num2', '#family_num3')">Next</a>
+         <label><input type="radio" id="study" name="need_thing" value="study">&nbsp;&nbsp;학업&nbsp;&nbsp;&nbsp;&nbsp;</label>
+         <label><input type="radio" id="money" name="need_thing" value="money">&nbsp;&nbsp;금전&nbsp;&nbsp;&nbsp;&nbsp;</label>
+         <label><input type="radio" id="comunication" name="need_thing" value="communication">&nbsp;&nbsp;소통&nbsp;&nbsp;&nbsp;&nbsp;</label>
+         <label><input type="radio" id="hate" name="need_thing" value="hate">&nbsp;&nbsp;핍박</label><br>
       </form>
+      <a href="#" id="family_btn2" class="btn" onclick="fnMovePage('#family_num2', '#family_num3')">Next</a>
     </div>
     <div id="family_num3" class="panels none">
        <form method="get" id="family_question3">
-          <h2>어려웠던 이유를 알려줄 수 있어?</h2><br>
           <input type="text" value="" id="family_reason">
-          <a href="#" id="btn3" class="btn" onclick="fnMovePage('#family_num3', '#family_num4')">Next</a>
        </form>
+       <a href="#" id="family_btn3" class="btn" onclick="fnMovePage('#family_num3', '#family_num4')">Next</a>
      </div>
      <div id="family_num4" class="panels none">
         <form method="get" id="family_question4">
-           <h2>많이 답답했겠다.. 부모님이 어떤 말을 해주길 바랬어??</h2><br>
            <input type="text" value="" id="family_want">
-           <a href="#" id="btn4" class="btn" onclick="fnMovePage('#family_num4', '#family_num5')">Next</a>
         </form>
+        <a href="#" id="family_btn4" class="btn" onclick="fnMovePage('#family_num4', '#family_num5')">Next</a>
       </div>
       <div id="family_num5" class="panels none">
          <form method="get" id="family_question5">
-            <h2>마지막으로 부모님에게 하고싶은 말 해줄 수 있어?</h2><br>
             <input type="text" value="" id="family_message">
-            <a href="#" id="btn_last" class="btn" onclick="fnMovePage('#family_num5', '#letter')">Next</a>
          </form>
+         <a href="#" id="family_btn5" class="btn" onclick="fnMovePage('#family_num5', '#letter')">Next</a>
          </div>
    <!--가족 질문 끝-->
 
    <div id="letter" class="panels none">         
          <div id="letter_alert">
             <h1>🔔하늘에서 편지가 도착했습니다</h1>  
-            <a href="#" id="btn_last" class="btn" onclick="fnMovePage('#letter', 'last')">열어보기</a>
          </div>
+         <a href="#" id="btn_last" class="btn" onclick="fnMovePage('#letter', 'last')">열어보기</a>
      </div>
 
    <div id="load_msg" class="none">  

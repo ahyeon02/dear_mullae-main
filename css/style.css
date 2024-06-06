@@ -22,9 +22,10 @@ body {
 #gender_container {
   position: relative;
   background-image: url("../img/letter_image.jpg");
+  background-position: center center;
   height: 100lvh;
   width: 100lvw;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
 }
@@ -32,7 +33,7 @@ body {
 #gender_form {
   position: absolute;
   left: 48%;
-  top: 68%;
+  top: 65%;
   transform: translate(-50%, -50%);
 }
 
@@ -40,7 +41,7 @@ body {
   vertical-align: middle;
   appearance: none;
   top: 120px;
-  background-color: rgb(122, 57, 3);
+  background-color: #728d67;
   border-radius: 50%;
   width: 3em;
   height: 3em;
@@ -58,7 +59,7 @@ body {
 }
 
 #gender_form [type="radio"]:checked {
-  background-image: url(../img/check1.png);
+  background-image: url(../img/check2.png);
   background-size: cover;
 }
 
@@ -89,9 +90,9 @@ body {
 }
 
 #start_btn1 {
-  position: relative;
-  top: 80px;
-  left: 750px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
   color: #2a7745;
 }
 
@@ -100,9 +101,10 @@ body {
 #difficult_container {
   position: relative;
   background-image: url("../img/difficult_thing.jpg");
+  background-position: center center;
   height: 100lvh;
   width: 100lvw;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
 }
@@ -166,247 +168,272 @@ body {
 }
 
 #start_btn2 {
-  position: relative;
-  top: 70px;
-  left: 700px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
   color: #2a7745;
 }
 
 
+
 #fruit_num1 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/fruit_background-03.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #fruit_question1 {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 62%;
   transform: translate(-50%, -50%);
 }
 
-#fruit_question1 h2 {
-  font-size: 40px;
-  color: #fff;
+#fruit_btn1 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
 }
 
 #fruit_num2 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/fruit_background-04.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #fruit_question2 {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 62%;
   transform: translate(-50%, -50%);
 }
 
-#fruit_question2 h2 {
-  font-size: 40px;
-  color: #fff;
+#fruit_btn2 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
 }
 
 #fruit_num3 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/fruit_background-05.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #fruit_question3 {
   position: absolute;
-  left: 45%;
-  top: 50%;
-  transform: translate(-40%, -50%);
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
 }
 
-#fruit_question3 h2 {
-  font-size: 40px;
-  color: #fff;
+#fruit_btn3 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
 }
 
 #fruit_num4 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/fruit_background-06.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #fruit_question4 {
   position: absolute;
-  left: 37%;
-  top: 50%;
-  transform: translate(-30%, -50%);
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
 }
 
-#fruit_question4 h2 {
-  font-size: 40px;
-  color: #fff;
+#fruit_btn4 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
 }
 
 #fruit_num5 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/fruit_background-07.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #fruit_question5 {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 62%;
   transform: translate(-50%, -50%);
 }
 
-#fruit_question5 h2 {
-  font-size: 40px;
-  color: #fff;
-}
-
-#fruit_num6 {
-  position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
-}
-
-#fruit_question6 {
+#fruit_btn5 {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#fruit_question6 h2 {
-  font-size: 40px;
-  color: #fff;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
 }
 
 
 #manager_num1 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/manager_background-03.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #manager_question1 {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 62%;
   transform: translate(-50%, -50%);
 }
 
-#manager_question1 h2 {
-  font-size: 40px;
-  color: #fff;
+#manager_btn1 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
 }
 
 #manager_num2 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/manager_background-04.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #manager_question2 {
   position: absolute;
-  left: 45%;
-  top: 50%;
-  transform: translate(-40%, -50%);
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
 }
 
-#manager_question2 h2 {
-  font-size: 40px;
-  color: #fff;
+#manager_btn2 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
 }
 
 #manager_num3 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/manager_background-05.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #manager_question3 {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 62%;
   transform: translate(-50%, -50%);
 }
 
-#manager_question3 h2 {
-  font-size: 40px;
-  color: #fff;
+#manager_btn3 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
 }
 
 #manager_num4 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/manager_background-06.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #manager_question4 {
   position: absolute;
-  left: 30%;
-  top: 50%;
-  transform: translate(-18%, -50%);
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
 }
 
-#manager_question4 h2 {
-  font-size: 40px;
-  color: #fff;
+#manager_btn4 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
 }
 
 
 #family_num1 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/family_background-03.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #family_question1 {
   position: absolute;
-  left: 40%;
-  top: 50%;
-  transform: translate(-32%, -50%);
-}
-
-#family_question1 h2 {
-  font-size: 40px;
-  color: #fff;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
 }
 
 #family_question1 [type="radio"]{
   vertical-align: middle;
   appearance: none;
-  border: 4px solid darkgray;
+  background-color: #C79664;
   border-radius: 50%;
   width: 3.5em;
   height: 3.5em;
 }
 
 #family_question1 label {
+  font-family: "Hahmlet";
   font-size: 20px;
-  font-weight: bold;
+  color: #E8E4D6;
   line-height: 3rem;
   padding: 0.2em 0.4em;
 }
@@ -416,8 +443,8 @@ body {
 }
 
 #family_question1 [type="radio"]:checked {
-  border: 4px solid darkgray;
-  background-color: #2a7745;
+  background-image: url(../img/check3.png);
+  background-size: cover;
 }
 
 #family_question1 [type="radio"]:focus-visible {
@@ -446,38 +473,44 @@ body {
   cursor: not-allowed;
 }
 
+#family_btn1 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
+}
+
 #family_num2 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/family_background-04.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #family_question2 {
   position: absolute;
-  left: 40%;
-  top: 50%;
-  transform: translate(-32%, -50%);
-}
-
-#family_question2 h2 {
-  font-size: 40px;
-  color: #fff;
+  left: 50%;
+  top: 61%;
+  transform: translate(-50%, -50%);
 }
 
 #family_question2 [type="radio"]{
   vertical-align: middle;
   appearance: none;
-  border: 4px solid darkgray;
+  background-color: #C79664;
   border-radius: 50%;
   width: 3.5em;
   height: 3.5em;
 }
 
 #family_question2 label {
+  font-family: "Hahmlet";
   font-size: 20px;
-  font-weight: bold;
+  color: #E8E4D6;
   line-height: 3rem;
   padding: 0.2em 0.4em;
 }
@@ -487,8 +520,8 @@ body {
 }
 
 #family_question2 [type="radio"]:checked {
-  border: 4px solid darkgray;
-  background-color: #2a7745;
+  background-image: url(../img/check3.png);
+  background-size: cover;
 }
 
 #family_question2 [type="radio"]:focus-visible {
@@ -517,73 +550,98 @@ body {
   cursor: not-allowed;
 }
 
+#family_btn2 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
+}
+
 #family_num3 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/family_background-05.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #family_question3 {
   position: absolute;
-  left: 45%;
-  top: 50%;
-  transform: translate(-40%, -50%);
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
 }
 
-#family_question3 h2 {
-  font-size: 40px;
-  color: #fff;
+#family_btn3 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
 }
 
 #family_num4 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/family_background-06.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #family_question4 {
   position: absolute;
-  left: 35%;
-  top: 50%;
-  transform: translate(-25%, -50%);
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
 }
 
-#family_question4 h2 {
-  font-size: 40px;
-  color: #fff;
+#family_btn4 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
 }
 
 #family_num5 {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/family_background-07.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #family_question5 {
   position: absolute;
-  left: 40%;
-  top: 50%;
-  transform: translate(-30%, -50%);
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
 }
 
-#family_question5 h2 {
-  font-size: 40px;
-  color: #fff;
+#family_btn5 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
 }
 
 
 #letter {
   position: relative;
-  top: 15%;
-  min-height: 70vh;
-  max-width: 100vw;
-  background-color: rgba(255, 228, 196, 0.3);
+  background-image: url("../img/letter_image2.jpg");
+  background-position: center center;
+  height: 100lvh;
+  width: 100lvw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 #letter_alert {
@@ -594,8 +652,16 @@ body {
 }
 
 #letter_alert h1 {
-  font-size: 40px;
-  color: #fff;
+  font-family: "Hahmlet";
+  font-size: 35px;
+  color: #000;
+}
+
+#btn_last {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #2a7745;
 }
 
 
@@ -630,7 +696,8 @@ body {
 
 #letter_from_god {
   background-image: url("../img/fianl_result1.jpg");
-  background-size: contain;
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
