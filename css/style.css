@@ -716,8 +716,15 @@ input[type="text"] {
   outline: none;
 }
 
+form input[type="text"] {
+  width:800px;
+  background-image: url("../img/input_background.png");
+  background-size: cover;
+  border: none;
+}
+
 input[type="text"]:focus {
-  border: solid 2px #D2691E;
+  border: solid 2px #000;
 }
 
 /* 3D Button */
